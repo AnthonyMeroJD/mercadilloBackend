@@ -1,7 +1,7 @@
 //en este archivo debo hacer uso de squalize 
 //y dar configuracion de la base de datos 
 import Sequalize from 'sequelize';
-import {PORT} from '../utils/index.js';
+
 /*@params
 nombre de la base de datos
 user 
