@@ -8,9 +8,9 @@ user
 pass 
 objeto de config */
 
-const db=new Sequalize('heroku_f6d378fc6cb8b3c','ba5c256bfdc289','ba5c256bfdc289',{
+const db=new Sequalize('heroku_f6d378fc6cb8b3c','ba5c256bfdc289','d2c70623',{
  host:'us-cdbr-east-04.cleardb.com',
- port:{PORT},
+ port:3306,
  dialect:'mysql',
  define:{
   timestamps:false 
