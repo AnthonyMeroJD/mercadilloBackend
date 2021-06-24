@@ -22,6 +22,7 @@ app.use(express.urlencoded({extended:true}));
 app.use('/',router);
 
 let s=app.listen(PORT,()=>{
-    syncDb();
+    console.log('start');
+    //syncDb();
 });
 //s.close();

@@ -7,6 +7,7 @@ import {anuncios,anuncioCategorizado,
         validarUsuario} from '../controlers/index.js'
 import { createUser,editarUser } from '../controlers/User.js';
 const router = express.Router();
+router.get("/",(req,res)=>res.send('welcome'))
 router.get("/anuncios",getAnuncios);
 router.get("/anuncios/:anuncioId",getAnuncioByPk);
 router.get("/anuncios/titulo/:titulo",anunciosForTitulo);
