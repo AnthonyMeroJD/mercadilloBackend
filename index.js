@@ -3,6 +3,7 @@ import cors from 'cors';
 import db, { syncDb } from './config/db.js';
 
 import router from './routes/index.js';
+import { PORT } from './utils/index.js';
 
 const app=express();
 
@@ -11,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 
-const port=process.env.Port|| 4900;
+const port=PORT;
 
 //solo se puede enviar una respuesta 
 //esta ees la manera de definir una ruta

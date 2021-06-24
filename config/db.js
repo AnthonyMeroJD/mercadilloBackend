@@ -1,14 +1,16 @@
 //en este archivo debo hacer uso de squalize 
 //y dar configuracion de la base de datos 
 import Sequalize from 'sequelize';
+import {PORT} from '../utils/index.js';
 /*@params
 nombre de la base de datos
 user 
 pass 
 objeto de config */
-const db=new Sequalize('mercadillo','root','root',{
- host:'127.0.1',
- port:'3306',
+
+const db=new Sequalize('heroku_f6d378fc6cb8b3c','ba5c256bfdc289','ba5c256bfdc289',{
+ host:'us-cdbr-east-04.cleardb.com',
+ port:{PORT},
  dialect:'mysql',
  define:{
   timestamps:false 
